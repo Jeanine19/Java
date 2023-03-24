@@ -2,6 +2,7 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
@@ -14,6 +15,13 @@ public class Menu {
 		String titular;
 		float saldo, limite, valor;
 
+		Conta c1 = new Conta(1, 123, 1, "Jeanine", 100000.00f);
+		
+		c1.visualizar();
+		
+		System.out.println("\nSaldo da conta:" + c1.getSaldo());
+		
+		
 		while (true) {
 
 			System.out.println(
