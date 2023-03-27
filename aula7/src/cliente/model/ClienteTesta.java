@@ -6,15 +6,18 @@ public class ClienteTesta {
 	private String endereco;
 	private String telefone;
 	private String email;
-	private String cpf;
+	private int id;
 
-	public ClienteTesta(String nome, String endereco, String telefone, String email, String cpf) {
+	public ClienteTesta(String nome, String endereco, String telefone, String email, int id) {
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
-        this.cpf = cpf;
+        this.id = id;
     }
+
+	
+
 
 	public String getNome() {
 		return nome;
@@ -48,12 +51,12 @@ public class ClienteTesta {
 		this.email = email;
 	}
 
-	public String getCpf() {
-		return cpf;
+	public int getid() {
+		return id;
 	}
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public void setid(int id) {
+		this.id = id;
 	}
 
 	public void visualizar() {
@@ -65,7 +68,7 @@ public class ClienteTesta {
 		System.out.println("Endereço do cliente:: " + this.endereco);
 		System.out.println("Telefone do cliente: " + this.telefone);
 		System.out.println("Email do cliente: " + this.email);
-		System.out.println("CPF do cliente: " + this.cpf);
+		System.out.println("ID: " + this.id);
 
 	}
 }

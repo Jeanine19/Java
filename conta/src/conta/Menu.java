@@ -3,7 +3,11 @@ package conta;
 import java.util.Scanner;
 
 import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupança;
 import conta.util.Cores;
+
+
 
 public class Menu {
 
@@ -16,11 +20,32 @@ public class Menu {
 		float saldo, limite, valor;
 
 		Conta c1 = new Conta(1, 123, 1, "Jeanine", 100000.00f);
-		
+		c1.visualizar();
+
+		c1.visualizar();
+		c1.sacar(12000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
 		c1.visualizar();
 		
-		System.out.println("\nSaldo da conta:" + c1.getSaldo());
+		ContaCorrente cc1 = new ContaCorrente(1, 123, 1, "Jeniffer Souza", 100000.00f, 1000.00f);		
+		cc1.visualizar();
 		
+		cc1.sacar(100900);
+		
+		cc1.visualizar();
+		
+		cc1.depositar(2000);
+		
+		cc1.visualizar();
+		
+		ContaPoupança cp1 = new ContaPoupança(2, 123, 2, "Sandra Melo ", 100000.0f, 19);
+		cp1.visualizar();
+        cp1.sacar(1000.0f);
+		cp1.visualizar();
+		cp1.depositar(5000.0f);
+		cp1.visualizar();
+	
 		
 		while (true) {
 
