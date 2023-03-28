@@ -10,7 +10,8 @@ public class TestaGame {
 
 		g1.visualizar();
 		
-		LocalDate data2 = LocalDate.of(2021, 8, 21);
+		LocalDate data2 = LocalDate.of(2013, 12, 3);
+		
 		g1.setDataLancamento(data2);
 		g1.setVersao(2);
 		

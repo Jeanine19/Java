@@ -1,6 +1,6 @@
 package conta.model;
 
-public class Conta {
+public abstract class Conta {
 
 	private int numero;
 	private int agencia;
@@ -87,6 +87,7 @@ public boolean sacar(float valor) {
 		}
 		System.out.println("***********************************");
 		System.out.println("           DADOS DA CONTA          ");
+		System.out.println("***********************************");
 		System.out.println("Numero da conta: " + this.numero);
 		System.out.println("Numero da agência: " + this.agencia);
 		System.out.println("Tipo da conta: " + this.tipo);

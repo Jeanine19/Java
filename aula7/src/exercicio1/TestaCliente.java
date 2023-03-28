@@ -16,8 +16,7 @@ public class TestaCliente {
 	        
 	         pf1.visualizar();
 	    
-
-	         
+	      
 	         
 	     }
 
